@@ -1,24 +1,24 @@
-from botella import Botella
-from botella_plastica import BotellaPlastica
-from botella_vidrio import BotellaVidrio
+from botella_termica import BotellaTermica
+from termica_plastica import TermicaPlastica
+from termica_vidrio import TermicaVidrio
 
-obj_plastica = BotellaPlastica("500 ml", "cuello corto", "liso", "tapa azul", "sin grabados")
-obj_vidrio = BotellaVidrio("750 ml", "cuello alargado", "estriado", "tapa de corcho", "vino")
+termo_agua = TermicaPlastica("600 ml", "curva", "marcador de agua", "tapa a rosca", "lineas de medida")
+termo_te = TermicaVidrio("400 ml", "alta y delgada", "lisa", "tapa de madera", "sin marcas")
 
-print(obj_plastica.contener_liquidos("agua"))
-print(obj_plastica.facilitar_el_vertido())
-print(obj_plastica.cerrar_hermetico())
-print(obj_plastica.transportar())
-print(obj_plastica.manejar())
-print(obj_plastica.compatibilidad_con_bebidas("frias"))
-print(obj_plastica.reutilizar())
-print(obj_plastica.transparencia())
+print(termo_agua.llenar("agua fria"))
+print(termo_agua.servir())
+print(termo_agua.precintar())
+print(termo_agua.llevar())
+print(termo_agua.sostener())
+print(termo_agua.uso_en_bebidas("calientes"))
+print(termo_agua.reciclar())
+print(termo_agua.se_ve_el_liquido())
 
-print(obj_vidrio.contener_liquidos("vino"))
-print(obj_vidrio.facilitar_el_vertido())
-print(obj_vidrio.cerrar_hermetico())
-print(obj_vidrio.transportar())
-print(obj_vidrio.manejar())
-print(obj_vidrio.compatibilidad_con_bebidas("calientes y frias"))
-print(obj_vidrio.reutilizar())
-print(obj_vidrio.transparencia())
+print(termo_te.llenar("te caliente"))
+print(termo_te.servir())
+print(termo_te.precintar())
+print(termo_te.llevar())
+print(termo_te.sostener())
+print(termo_te.uso_en_bebidas("calientes y frias"))
+print(termo_te.reciclar())
+print(termo_te.se_ve_el_liquido())
